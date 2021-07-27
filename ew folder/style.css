@@ -3,105 +3,54 @@
     padding: 0;
     box-sizing: border-box;
 }
+html,
+body {
+  position: relative;
+  height: 100%;
+}
 
 body {
-    background-color: rgb(236, 233, 233);
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
 }
 
-.wrap {
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.box {
     width: 100%;
-    min-height: 100vh;
-    padding: 2rem;
+    height: 250px;
+    margin: 1.5rem 0;
 }
 
-.wrap .card {
-    width: 100%;
-    height: 200px;
-    background-color: #ff6b81;
-    border-radius: 10px;
-    position: relative;
-    margin-bottom: 3.5rem;
-}
-
-.wrap .card.green {
-    background-color: #55E6C1;
-}
-
-.wrap .card.indigo {
-    background-color: #e056fd;
-}
-
-.wrap .card.green .avatar {
-    border-color: #55E6C1;
-}
-
-.wrap .card.indigo .avatar {
-    border-color: #e056fd;
-}
-
-.wrap .card.green .icon {
-    color: #0c694d;
-}
-
-.wrap .card.indigo .icon {
-    color: #b338cc;;
-}
-
-.wrap .card .avatar {
-    position: absolute;
-    width: 75px;
-    height: 75px;
-    background-color: white;
-    border: 3px solid #ff6b81;
-    border-radius: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-35%);
-    overflow: hidden;
-}
-
-.wrap .card .avatar img {
-    width: 100%;
-}
-
-.wrap .card .icon {
-    padding: 10px;
-    font-size: 2rem;
-    color: #eccc68;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 1.5rem;
-}
-
-.wrap .card .caption {
-    text-align: center;
-    color: white;
-}
-
-.wrap .card .caption .balance {
-    display: flex;
-    width: 90%;
-    margin: auto;
-    justify-content: space-between;
-    margin-top:  1rem;
-}
-
-
-.footer {
-    background-color: white;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer ul {
-    display: flex;
-    justify-content: space-around;
-    list-style: none;
-}
-
-.footer ul li {
-    padding: 1rem 0;
-    font-size: 1.5rem;
-    color: #ccc;
+img {
+    width:  100%;
 }
